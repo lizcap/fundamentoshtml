@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudocalses y pseudoelementos</title>
+    <style>
+/*pseudoclases(:)*/
+
+div:{
+    background-color: aquamarine;
+    color: brown;
+}
+div:hover{
+    background-color: aqua;
+    color:bisque;
+}   
+input:focus{
+background-color: aqua;
+    color: hotpink;
+} 
+input :required{
+    background-color: aqua;
+    color: coral;
+} 
+.cuadro{
+
+    width: :100px;
+    height: 100px;
+    background-color: lightblue;
+    float:left;
+    border: 1px solid green;
+}
+.cuadro::first-child {
+    background-color: blueviolet;
+
+}
+.cuadro::nth-child(odd) {
+    background-color: blueviolet;
+
+}
+.cuadro::last-child {
+    background-color: blueviolet;
+
+}
+/*pseudoelementos (::)*/
+
+p::first-letter{
+    color:blueviolet;
+}
+p::after{
+    content: "🤦‍♀️";
+}
+    </style>
+
+</head>
+<body>
+   <div>este es un div</div> 
+   <div>este es un div</div> 
+   <div>este es un div</div> 
+
+   <input type="text" name="" id="" required>
+   <input type="text" name="" id="">
+   <input type="text" name="" id="">
+   
+   <div class="container">
+    <div>
+        <p>parrafo</p>
+        <p>parrafo</p>
+        <p>parrafo</p>
+    
+    </div>
+
+   <div class="cuadro">Div1</div>
+   <div class="cuadro">Div2</div>
+   <div class="cuadro">Div3</div>
+   <div class="cuadro">Div4</div>
+   <div class="cuadro">Div5</div>
+   <div class="cuadro">Div6</div>
+</div>
+
+</body>
+</html>
